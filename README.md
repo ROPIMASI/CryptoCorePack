@@ -1,7 +1,7 @@
-﻿# CryptoCorePack
+﻿# CryptoCorePack _(symm.wwo.pw)_
 Cryptogrphy Core Package  
   
-#### The *CryptoCore.java* and its resources are a project sample, which I have developing to demonstrate some of my abilities.  
+#### The _CryptoCore.java_ and its resources are a project sample, which I have developing to demonstrate some of my abilities.  
   
 The CryptoCorePack project belongs to my personal portfolio. Its detailed project can be followed just here on GitHub: [github.com/users/ROPIMASI/projects/](https://github.com/users/ROPIMASI/projects/). It is also found on my web-portfolio: [ropimasi.wixsite.com/portfolio](https://ropimasi.wixsite.com/portfolio).  
   
@@ -16,11 +16,11 @@ The CryptoCorePack project belongs to my personal portfolio. Its detailed projec
 #### CONTENT: A PERSONAL UTILITY MINI PPROJECT.
 THEME: TEXT SYMETRIC CRYPTOGRAFY TOOL PACKAGE.  
 PROJECT NAME: _**CryptoCorePack**_.  
-PROJECT VERSION: 0.0.1.beta.  
+PROJECT VERSION: 1.0.0.beta.  
 SOURCE FILE NAME: _**CryptoCore.java**_.  
 BIN FILE NAME: _**CryptoCore.class**_ or _**cryptocorepack.jar**_.  
 DEPENDENCES: None.  
-BRANCH: MASTER.  
+BRANCH: **SYMM.WWO.PW**.  
 AUTHOR: RONALDO PI MA SI.  
 DATE: 2019-OCT.  
 LANGUAGE: JAVA 8. 
