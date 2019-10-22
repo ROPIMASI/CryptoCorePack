@@ -1,6 +1,17 @@
-/**
+/******************************************************************************
+ * CryptoCorePack
+ * Cryptogrphy Core Package  
+ * 
+ * The CryptoCore.java and its resources are a project sample, which I have_
+ * developing to demonstrate some of my abilities.
+ *   
+ * The CryptoCorePack project belongs to my personal portfolio. Its detailed_
+ * project can be followed just here on GitHub:_
+ * https://github.com/users/ROPIMASI/projects/ . It is also found on my web-
+ * portfolio: https://ropimasi.wixsite.com/portfolio .  
+ * 
  * CONTENT: A PERSONAL UTILITY MINI PPROJECT.
- * THEME: SYMMETRIC AND ASYMMETRIC CRYPTOGRAFY LIBRARY.
+ * THEME: TEXT SYMETRIC CRYPTOGRAFY TOOL PACKAGE.
  * PROJECT NAME: CryptoCorePack.
  * PPROJECT VERSION: 0.0.1.beta.
  * SOURCE FILE NAME: CryptoCore.java.
@@ -10,7 +21,8 @@
  * AUTHOR: RONALDO PI MA SI.
  * DATE: 2019-OCT.
  * LANGUAGE: JAVA 8.
- * PLATAFORM: Microsoft Windows7, Eclipse IDE EE v201903(4.11.0), JDK_SE-JRE-JVM 1.8.0.22.
+ * PLATAFORM: Microsoft Windows7, Eclipse IDE EE v201903(4.11.0),_
+ * JDK_SE-JRE-JVM 1.8.0.22.
  * 
  * NOTA IMPORTANTE / ISENÇÃO DE RESPONSABILIDADE:
  * Este é um projeto pessoal, particular, com finalidade exclusiva de estudos
@@ -25,10 +37,19 @@
  * It is a project under development and experimentation, which has no respon-
  * sibility for the information contained therein, nor about its results and_
  * effects when used.  
- */
+******************************************************************************/
 
+
+// PACKAGE OWNER.
 package cryptocorepack;
 
+
+
+// IMPORT OF DEPENDENCES.
+
+
+
+// MAIN CLASS.
 public final class CryptoCore {
 
 	// Declaração de constantes e variáveis globais.
