@@ -4,15 +4,25 @@ Cryptogrphy Core Package
 #### The _CryptoCore.java_ and its resources are a project sample, which I have developing to demonstrate some of my abilities.  
   
 The CryptoCorePack project belongs to my personal portfolio. Its detailed project can be followed just here on GitHub: [github.com/users/ROPIMASI/projects/](https://github.com/users/ROPIMASI/projects/). It is also found on my web-portfolio: [ropimasi.wixsite.com/portfolio](https://ropimasi.wixsite.com/portfolio).  
-  
-  
+   
+   
 ### Features in this version:
-...planing...  
-  
+   + Prints simple characteres on the screen to see each step of the processing running up, whether `IN_DEBUG_MODE` == true (only possible on develop envorioment);
+   + Returns, through a fuction, one encrypted text value from one given decrypted text value and one password, both as arguments;
+   + Returns, through a fuction, one decrypted text value from one given encrypted text value and one password, both as arguments;
+   + Returns, through a fuction, one encrypted text value from one given decrypted text value as arguments, without password;
+   + Returns, through a fuction, one decrypted text value from one given encrypted text value as arguments, without password;
+   + Character set workable: ASCII.  
+   
+   
+### Release target:
+   + Features above.  
+   
+   
 ### Features in future versions:
 ...planing...  
-  
-  
+   
+   
 #### CONTENT: A PERSONAL UTILITY MINI PPROJECT.
 THEME: TEXT SYMETRIC CRYPTOGRAFY TOOL PACKAGE.  
 PROJECT NAME: _**CryptoCorePack**_.  
