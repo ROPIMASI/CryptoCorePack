@@ -7,7 +7,7 @@ The CryptoCorePack project belongs to my personal portfolio. Its detailed projec
    
    
 ### Features in this version:
-   + Prints simple characteres on the screen to see each step of the processing running up, whether `IN_DEBUG_MODE` == true (only possible on develop envorioment);
+   + Prints simple characteres on the screen to see each step of the processing running up, whether `IN_DEBUG_MODE == true` (only possible on develop envorioment);
    + Returns, through a fuction, one encrypted text value from one given decrypted text value and one password, both as arguments;
    + Returns, through a fuction, one decrypted text value from one given encrypted text value and one password, both as arguments;
    + Returns, through a fuction, one encrypted text value from one given decrypted text value as arguments, without password;
