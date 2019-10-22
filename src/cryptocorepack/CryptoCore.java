@@ -1,5 +1,5 @@
 /******************************************************************************
- * CryptoCorePack
+ * CryptoCorePack (symm.wwo.pw)
  * Cryptogrphy Core Package  
  * 
  * The CryptoCore.java and its resources are a project sample, which I have_
@@ -11,9 +11,9 @@
  * portfolio: https://ropimasi.wixsite.com/portfolio .  
  * 
  * CONTENT: A PERSONAL UTILITY MINI PPROJECT.
- * THEME: TEXT SYMETRIC CRYPTOGRAFY TOOL PACKAGE.
+ * THEME: TEXT SYMETRIC CRYPTOGRAFY PACKAGE.
  * PROJECT NAME: CryptoCorePack.
- * PPROJECT VERSION: 0.0.1.beta.
+ * PPROJECT VERSION: 1.0.0.beta.
  * SOURCE FILE NAME: CryptoCore.java.
  * BIN FILE NAME: CryptoCore.class or its JAR: cryptocorepack.jar.
  * DEPENDENCES: None.
@@ -40,6 +40,7 @@
 ******************************************************************************/
 
 
+
 // PACKAGE OWNER.
 package cryptocorepack;
 
@@ -54,7 +55,7 @@ public final class CryptoCore {
 
 	// Declaração de constantes e variáveis globais.
 	public static final String PACK_NAME = "CryptoCorePack";
-	public static final String PACK_VERSION = "0.0.1.beta";
+	public static final String PACK_VERSION = "1.0.0.beta";
 	public static final String CHAR_SET_ABLE = "ASCII";
 	public static final boolean IN_DEBUG_MODE = true;
 	// Método de impressão particular para DEBUG_MODE true.
@@ -62,6 +63,8 @@ public final class CryptoCore {
 		if (IN_DEBUG_MODE) System.out.println(str);
 	}
 
+	
+	
 	public static String resizeRepeating(String key, int newLength) {
 		idmPrint(",");
 
@@ -82,7 +85,9 @@ public final class CryptoCore {
 		}
 	}
 
-	public static String encrypt(String decryptedText) {
+	
+	
+	public static String symmEncrypt(String decryptedText) {
 		/**
 		 * Return an encrypted string from a given natural text (input on arg).
 		 * 
@@ -97,7 +102,10 @@ public final class CryptoCore {
 		return encryptedText;
 	}
 
-	public static String encrypt(String decryptedText, String password) {
+	
+	
+	// Overloading...
+	public static String symmEncrypt(String decryptedText, String password) {
 		/**
 		 * Return an encrypted string from a given natural text (input on arg).
 		 * 
@@ -114,7 +122,9 @@ public final class CryptoCore {
 		return encryptedText;
 	}
 
-	public static String decrypt(String encryptedText) {
+	
+	
+	public static String symmDecrypt(String encryptedText) {
 		/**
 		 * Return a decrypted string from a given encrypted text (input on arg).
 		 * 
@@ -129,7 +139,10 @@ public final class CryptoCore {
 		return decryptedText;
 	}
 
-	public static String decrypt(String encryptedText, String password) {
+	
+	
+	// Overloading...
+	public static String symmDecrypt(String encryptedText, String password) {
 		/**
 		 * Return a decrypted string from a given encrypted text (input on arg).
 		 * 
