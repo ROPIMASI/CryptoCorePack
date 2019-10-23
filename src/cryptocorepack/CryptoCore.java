@@ -58,17 +58,20 @@ public final class CryptoCore {
 	public static final String PACK_VERSION = "1.0.0.beta";
 	public static final String CHAR_SET_ABLE = "ASCII";
 	public static final boolean IN_DEBUG_MODE = true;
-	// Método de impressão particular para DEBUG_MODE true.
+	
+	
+	
+	// Método auxiliar de verificação exclusivo para DEBUG_MODE == true.
 	protected static void idmPrint(String str) {
 		if (IN_DEBUG_MODE) System.out.println(str);
 	}
 
 	
 	
+	// Método redimensionador da senha através de repetição.
 	public static String resizeRepeating(String key, int newLength) {
-		idmPrint(",");
-
 		if (key.length() == newLength) {
+			idmPrint(",");
 			return key;
 		} else if (key.length() < newLength) {
 			int pos = 0;
@@ -80,6 +83,7 @@ public final class CryptoCore {
 			} while (key.length() < newLength);
 			return key;
 		} else { // (key.length() > newLength)
+			idmPrint(",");
 			key = key.substring(0, newLength);
 			return key;
 		}
@@ -87,15 +91,15 @@ public final class CryptoCore {
 
 	
 	
+	// Encriptar simétrica sem senha. 
 	public static String symmEncrypt(String decryptedText) {
 		/**
 		 * Return an encrypted string from a given natural text (input on arg).
 		 * 
 		 */
 		String encryptedText = "";
-		idmPrint("e");
 		for (int i = 0; i < decryptedText.length(); i++) {
-			idmPrint("e");
+			idmPrint(".");
 			encryptedText += (char) ((int) (decryptedText.charAt(i)) + (decryptedText.length() - i));
 		}
 		idmPrint("[" + encryptedText + "]");
@@ -104,14 +108,13 @@ public final class CryptoCore {
 
 	
 	
-	// Overloading...
+	// Overloading... Encriptar simétrica com senha. 
 	public static String symmEncrypt(String decryptedText, String password) {
 		/**
 		 * Return an encrypted string from a given natural text (input on arg).
 		 * 
 		 */
 		idmPrint("[" + password + "][" + decryptedText.length() + "]");
-		idmPrint(".");
 		password = resizeRepeating(password, decryptedText.length());
 		String encryptedText = "";
 		for (int i = 0; i < decryptedText.length(); i++) {
@@ -124,15 +127,15 @@ public final class CryptoCore {
 
 	
 	
+	// Decriptar simétrica sem senha.
 	public static String symmDecrypt(String encryptedText) {
 		/**
 		 * Return a decrypted string from a given encrypted text (input on arg).
 		 * 
 		 */
 		String decryptedText = "";
-		idmPrint("d");
 		for (int i = 0; i < encryptedText.length(); i++) {
-			idmPrint("d");
+			idmPrint(":");
 			decryptedText += (char) ((int) (encryptedText.charAt(i)) - (encryptedText.length() - i));
 		}
 		idmPrint("[" + decryptedText + "]");
@@ -141,14 +144,13 @@ public final class CryptoCore {
 
 	
 	
-	// Overloading...
+	// Overloading... Decriptar simétrica sem senha.
 	public static String symmDecrypt(String encryptedText, String password) {
 		/**
 		 * Return a decrypted string from a given encrypted text (input on arg).
 		 * 
 		 */
 		idmPrint("[" + password + "][" + encryptedText.length() + "]");
-		idmPrint(":");
 		password = resizeRepeating(password, encryptedText.length());
 		String decryptedText = "";
 		for (int i = 0; i < encryptedText.length(); i++) {
