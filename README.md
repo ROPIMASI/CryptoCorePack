@@ -6,8 +6,8 @@ Cryptogrphy Core Package
 The CryptoCorePack project belongs to my personal portfolio. Its detailed project can be followed just here on GitHub: [github.com/users/ROPIMASI/projects/](https://github.com/users/ROPIMASI/projects/). It is also found on my web-portfolio: [ropimasi.wixsite.com/portfolio](https://ropimasi.wixsite.com/portfolio).  
    
    
-### Features in this version:
-   + Prints simple characteres on the screen to see each step of the processing running up, whether `IN_DEBUG_MODE == true` (only possible on develop envorioment);
+### Features in this version (1.0.0):
+   + Prints simple characteres on the screen to see each step of the processing running up, whether `IN_DEBUG_MODE == true` (true/false only possible to change it on develop envorioment);
    + Returns, through a fuction, one encrypted text value from one given decrypted text value and one password, both as arguments;
    + Returns, through a fuction, one decrypted text value from one given encrypted text value and one password, both as arguments;
    + Returns, through a fuction, one encrypted text value from one given decrypted text value as arguments, without password;
@@ -15,12 +15,12 @@ The CryptoCorePack project belongs to my personal portfolio. Its detailed projec
    + Character set workable: ASCII.  
    
    
-### Release target:
+### Release target (1.0.0):
    + Features above.  
    
    
-### Features in future versions:
-...planing...  
+### Features in future versions (1.1.0):
+   + ...planing...  
    
    
 #### CONTENT: A PERSONAL UTILITY MINI PPROJECT.
