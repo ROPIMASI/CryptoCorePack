@@ -1,17 +1,17 @@
 ﻿# CryptoCorePack
 Cryptogrphy Core Package  
+  <br>  
   
 #### The *CryptoCore.java* and its resources are a project sample, which I have developing to demonstrate some of my abilities.  
-  
 The CryptoCorePack project belongs to my personal portfolio. Its detailed project can be followed just here on GitHub: [github.com/users/ROPIMASI/projects/](https://github.com/users/ROPIMASI/projects/). It is also found on my web-portfolio: [ropimasi.wixsite.com/portfolio](https://ropimasi.wixsite.com/portfolio).  
-  
+  <br>  
   
 ### Features in this version:
 ...planing...  
   
 ### Features in future versions:
 ...planing...  
-  
+  <br>  
   
 #### CONTENT: A PERSONAL UTILITY MINI PPROJECT.
 THEME: TEXT SYMETRIC CRYPTOGRAFY TOOL PACKAGE.  
