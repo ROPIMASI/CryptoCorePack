@@ -1,28 +1,32 @@
 ﻿# CryptoCorePack _(symm.wwo.pw)_
 Cryptogrphy Core Package  
   
-#### The _CryptoCore.java_ and its resources are a project sample, which I have developing to demonstrate some of my abilities.  
+  <br>  
   
+#### The _CryptoCore.java_ and its resources are a project sample, which I have developing to demonstrate some of my abilities.
 The CryptoCorePack project belongs to my personal portfolio. Its detailed project can be followed just here on GitHub: [github.com/users/ROPIMASI/projects/](https://github.com/users/ROPIMASI/projects/). It is also found on my web-portfolio: [ropimasi.wixsite.com/portfolio](https://ropimasi.wixsite.com/portfolio).  
-   
+  
+  <br>  
    
 ### Features in this version (1.0.0):
-   + Prints simple characteres on the screen to see each step of the processing running up, whether `IN_DEBUG_MODE == true` (true/false only possible to change it on develop envorioment);
-   + Returns, through a fuction, one encrypted text value from one given decrypted text value and one password, both as arguments;
-   + Returns, through a fuction, one decrypted text value from one given encrypted text value and one password, both as arguments;
-   + Returns, through a fuction, one encrypted text value from one given decrypted text value as arguments, without password;
-   + Returns, through a fuction, one decrypted text value from one given encrypted text value as arguments, without password;
+   + Prints simple characteres on the terminal console screen to see each step of the processing running up, whether `IN_DEBUG_MODE == true` (true/false only possible to change it on develop envorioment);
+   + A symmetric cryptography class:
+      - A method returns one symmetric-encrypted text from one given decrypted text and one password, both as arguments;
+      - A method returns one decrypted text from one given encrypted(by above method) text and one password, both as arguments;
+      - A method returns one symmetric-encrypted text from one given decrypted text as arguments, without password;
+      - A method returns one decrypted text from one given encrypted(by above method) text as arguments, without password;
    + Character set workable: ASCII.  
-   
-   
+      
 ### Release target (1.0.0):
    + Features above.  
-   
-   
+      
 ### Features in future versions (1.1.0):
-   + ...planing...  
-   
-   
+   + A asymmetric cryptography class:
+      - A method returns one asymmetric-encrypted text from one given decrypted text and one password, both as arguments;
+      - A method returns one asymmetric-encrypted text, without password;
+  
+  <br>  
+     
 #### CONTENT: A PERSONAL UTILITY MINI PPROJECT.
 THEME: TEXT SYMETRIC CRYPTOGRAFY TOOL PACKAGE.  
 PROJECT NAME: _**CryptoCorePack**_.  
