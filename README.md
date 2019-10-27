@@ -14,7 +14,7 @@ The CryptoCorePack project belongs to my personal portfolio. Its detailed projec
       - A method returns one symmetric-encrypted text from one given decrypted text and one password, both as arguments;
       - A method returns one decrypted text from one given encrypted(by above method) text and one password, both as arguments;
       - A method returns one symmetric-encrypted text from one given decrypted text as arguments, without password;
-      - A method returns one decrypted text from one given encrypted(by above method) text as arguments, without password;
+      - A method returns one decrypted text from one given encrypted(by above method) text as arguments, without password.
    + Character set workable: ASCII.  
       
 ### Release target (1.0.0):
@@ -23,7 +23,7 @@ The CryptoCorePack project belongs to my personal portfolio. Its detailed projec
 ### Features in future versions (1.1.0):
    + A asymmetric cryptography class:
       - A method returns one asymmetric-encrypted text from one given decrypted text and one password, both as arguments;
-      - A method returns one asymmetric-encrypted text, without password;
+      - A method returns one asymmetric-encrypted text, without password.
   
   <br>  
      
