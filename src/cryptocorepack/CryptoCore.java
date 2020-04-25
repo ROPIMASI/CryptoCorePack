@@ -1,5 +1,5 @@
 /******************************************************************************
- * CryptoCorePack
+ * CryptoCorePack (symm.wwo.pw)
  * Cryptogrphy Core Package  
  * 
  * The CryptoCore.java and its resources are a project sample, which I have_
@@ -11,9 +11,9 @@
  * portfolio: https://ropimasi.wixsite.com/portfolio .  
  * 
  * CONTENT: A PERSONAL UTILITY MINI PPROJECT.
- * THEME: TEXT SYMETRIC CRYPTOGRAFY TOOL PACKAGE.
+ * THEME: TEXT SYMETRIC CRYPTOGRAFY PACKAGE.
  * PROJECT NAME: CryptoCorePack.
- * PPROJECT VERSION: 0.0.1.beta.
+ * PPROJECT VERSION: 1.0.0.beta.
  * SOURCE FILE NAME: CryptoCore.java.
  * BIN FILE NAME: CryptoCore.class or its JAR: cryptocorepack.jar.
  * DEPENDENCES: None.
@@ -40,6 +40,7 @@
 ******************************************************************************/
 
 
+
 // PACKAGE OWNER.
 package cryptocorepack;
 
@@ -54,18 +55,23 @@ public final class CryptoCore {
 
 	// Declaração de constantes e variáveis globais.
 	public static final String PACK_NAME = "CryptoCorePack";
-	public static final String PACK_VERSION = "0.0.1.beta";
+	public static final String PACK_VERSION = "1.0.0.beta";
 	public static final String CHAR_SET_ABLE = "ASCII";
 	public static final boolean IN_DEBUG_MODE = true;
-	// Método de impressão particular para DEBUG_MODE true.
+	
+	
+	
+	// Método auxiliar de verificação exclusivo para DEBUG_MODE == true.
 	protected static void idmPrint(String str) {
 		if (IN_DEBUG_MODE) System.out.println(str);
 	}
 
+	
+	
+	// Método redimensionador da senha através de repetição.
 	public static String resizeRepeating(String key, int newLength) {
-		idmPrint(",");
-
 		if (key.length() == newLength) {
+			idmPrint(",");
 			return key;
 		} else if (key.length() < newLength) {
 			int pos = 0;
@@ -77,33 +83,38 @@ public final class CryptoCore {
 			} while (key.length() < newLength);
 			return key;
 		} else { // (key.length() > newLength)
+			idmPrint(",");
 			key = key.substring(0, newLength);
 			return key;
 		}
 	}
 
-	public static String encrypt(String decryptedText) {
+	
+	
+	// Encriptar simétrica sem senha. 
+	public static String symmEncrypt(String decryptedText) {
 		/**
 		 * Return an encrypted string from a given natural text (input on arg).
 		 * 
 		 */
 		String encryptedText = "";
-		idmPrint("e");
 		for (int i = 0; i < decryptedText.length(); i++) {
-			idmPrint("e");
+			idmPrint(".");
 			encryptedText += (char) ((int) (decryptedText.charAt(i)) + (decryptedText.length() - i));
 		}
 		idmPrint("[" + encryptedText + "]");
 		return encryptedText;
 	}
 
-	public static String encrypt(String decryptedText, String password) {
+	
+	
+	// Overloading... Encriptar simétrica com senha. 
+	public static String symmEncrypt(String decryptedText, String password) {
 		/**
 		 * Return an encrypted string from a given natural text (input on arg).
 		 * 
 		 */
 		idmPrint("[" + password + "][" + decryptedText.length() + "]");
-		idmPrint(".");
 		password = resizeRepeating(password, decryptedText.length());
 		String encryptedText = "";
 		for (int i = 0; i < decryptedText.length(); i++) {
@@ -114,28 +125,32 @@ public final class CryptoCore {
 		return encryptedText;
 	}
 
-	public static String decrypt(String encryptedText) {
+	
+	
+	// Decriptar simétrica sem senha.
+	public static String symmDecrypt(String encryptedText) {
 		/**
 		 * Return a decrypted string from a given encrypted text (input on arg).
 		 * 
 		 */
 		String decryptedText = "";
-		idmPrint("d");
 		for (int i = 0; i < encryptedText.length(); i++) {
-			idmPrint("d");
+			idmPrint(":");
 			decryptedText += (char) ((int) (encryptedText.charAt(i)) - (encryptedText.length() - i));
 		}
 		idmPrint("[" + decryptedText + "]");
 		return decryptedText;
 	}
 
-	public static String decrypt(String encryptedText, String password) {
+	
+	
+	// Overloading... Decriptar simétrica sem senha.
+	public static String symmDecrypt(String encryptedText, String password) {
 		/**
 		 * Return a decrypted string from a given encrypted text (input on arg).
 		 * 
 		 */
 		idmPrint("[" + password + "][" + encryptedText.length() + "]");
-		idmPrint(":");
 		password = resizeRepeating(password, encryptedText.length());
 		String decryptedText = "";
 		for (int i = 0; i < encryptedText.length(); i++) {
