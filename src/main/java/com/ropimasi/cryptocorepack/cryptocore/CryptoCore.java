@@ -3,8 +3,8 @@
  * CryptoCorePack (symm.wwok)
  * Cryptography Core Package Project (branch: symm.wwok)
  * 
- * The CryptoCorePack and its resources are a personal property project sample, which I have developing to demonstrate some of my abilities.
- * The CryptoCorePack project belongs to my personal portfolio. Its detailed project can be followed just here on GitHub: https://github.com/users/ROPIMASI/projects/ . It is also found on my web portfolio: https://ropimasi.wixsite.com/portfolio .
+ * The CryptoCorePack and its resources are a personal property project sample, which I have developing to demonstrate some of my abilities: java, oop, scrum, kanban, git, github, gitflow.
+ * The CryptoCorePack project belongs to my personal portfolio. Detailed project can be followed just here on GitHub: https://github.com/users/ROPIMASI/projects/. It is also found on my web portfolio: https://ropimasi.wixsite.com/portfolio.
  * 
  * AUTHOR: RONALDO PI MA SI.
  * LICENSE: PRIVATE (either copy or usage are prohibited).
@@ -19,7 +19,6 @@
  * DEV. ENVIRONMENT PLATAFORM:
  *     - LANGUAGE: JAVA 8. 
  *     - Microsoft Windows(10), Eclipse IDE EE v201903(4.11.0), JDK_SE-JRE-JVM 1.8.0.212;
- *     - Debian Linux(10) Buster, Eclipse IDE EE v20201(4.xxxx), JDK_SE-JRE-JVM 1.8.0.212.
  * 
  * PROJECT ASSETS:
  *     - SOURCE FILE NAME: CryptoCore.java;
