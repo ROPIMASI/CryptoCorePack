@@ -1,7 +1,7 @@
 /*****************************************************************************80
  *
- * CryptoCorePack (symm.wwok)
- * Cryptography Core Package Project (branch: symm.wwok)
+ * CryptoCorePack
+ * Cryptography Core Package Project
  * 
  * The CryptoCorePack and its resources are a personal property project sample, which I have developing to demonstrate some of my abilities: java, oop, scrum, kanban, git, github, gitflow.
  * The CryptoCorePack project belongs to my personal portfolio. Detailed project can be followed just here on GitHub: https://github.com/users/ROPIMASI/projects/. It is also found on my web portfolio: https://ropimasi.wixsite.com/portfolio.
@@ -12,7 +12,6 @@
  * CONTENT: A PERSONAL CRYPTOGRAPHY UTILITIES PPROJECT;
  *     - THEME: TEXT SYMMETRIC AND ASYMMETRIC CRYPTOGRAFY PACKAGE;
  *     - PROJECT NAME: CryptoCorePack;
- *     - PROJECT BRANCH: symm.wwok;
  *     - PROJECT VERSION: 0.1.0-dev+20200425;
  *     - DEPENDENCES: None;
  *     
