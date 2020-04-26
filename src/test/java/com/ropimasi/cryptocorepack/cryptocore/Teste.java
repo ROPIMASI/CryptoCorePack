@@ -1,0 +1,15 @@
+package com.ropimasi.cryptocorepack.cryptocore;
+
+import static org.junit.Assert.*;
+import org.junit.Test;
+
+public class Teste {
+
+	@Test
+	public void test() {
+		// fail("Not yet implemented");
+		
+		
+	}
+
+}

@@ -48,18 +48,22 @@ package com.ropimasi.cryptocorepack.cryptocore;
 
 
 
-/* MAIN CLASS. */
+/* THE MAIN CLASS. */
 public final class CryptoCore {
 
 	/* PRE-DEFINED STANDARD PROJECT INFOMATIONS CONSTANTS. */
-	public static final String PROJ_NAME = "CRYPTOGRAPHY CORE PACKAGE";
+	public static final String PROJ_NAME = "CRYPTOGRAPHY CORE PACK";
+	public static final String PROJ_PACKAGE_PATH = "com/ropimasi/cryptocorepack/cryptocore";
+	public static final String PROJ_PACKAGE_NAME = "com.ropimasi.cryptocorepack.cryptocore";
 	public static final String PROJ_PACK_NAME = "cryptocore";
-	public static final String PROJ_BUILD = "20200425";
+	
+	public static final String PROJ_BUILD = "20200426";
 	public static final String PROJ_PRE_VERSION = "dev";
-	public static final String PROJ_VERSION_PATCH = "2";
+	public static final String PROJ_VERSION_PATCH = "0";
 	public static final String PROJ_VERSION_MINOR = "1";
 	public static final String PROJ_VERSION_MAJOR = "0";
 	public static final String PROJ_VERSION = PROJ_VERSION_MAJOR+"."+PROJ_VERSION_MINOR+"."+PROJ_VERSION_PATCH+"-"+PROJ_PRE_VERSION+"+"+PROJ_BUILD;
+	
 	public static final String TITLE = PROJ_NAME +" "+ PROJ_VERSION;
 	public static final String CHAR_SET_WORKABLE = "ASCII";
 	public static final boolean IN_DEBUG_MODE = true;
@@ -70,20 +74,20 @@ public final class CryptoCore {
 	
 	/* ERR01__ SERIES: CLI PARAMETERS IN GENERAL: */
 	/* 1st argument missing: */
-	public static final String ERR0101 = "Error # 0101.\nDescription: ...\nSolution: ...\nSee ... for more information.\n";
+	public static final String ERR0101 = "Error # 0101.\nDescription: ...\nSolution: ...\nSee ... for more information.";
 	/* # 2nd argument missing: */
-	public static final String ERR0102 = "Error # 0102.\nDescription: ...\nSolution: ...\nSee ... for more information.\n";
+	public static final String ERR0102 = "Error # 0102.\nDescription: ...\nSolution: ...\nSee ... for more information.";
 	
 	/* ERR02__ SERIES: CLI OPTIONS PARAMETERS SPECIFICALLY: */
 	/* Unknown option: */
-	public static final String ERR0201 = "Error # 0201.\nDescription: ...\nSolution: ...\nSee ... for more information.\n";
+	public static final String ERR0201 = "Error # 0201.\nDescription: ...\nSolution: ...\nSee ... for more information.";
 	
 	/* ERR03__ SERIES: CLI FILES PARAMETERS SPECIFICALLY: */
 	/* File not found: */
-	public static final String ERR0301 = "Error # 0301.\nDescription: ...\nSolution: ...\nSee ... for more information.\n";
+	public static final String ERR0301 = "Error # 0301.\nDescription: ...\nSolution: ...\nSee ... for more information.";
 
 	/* # ERR99__ SERIES: UNHANDLED OR UNSPECTED: */
-	public static final String ERR9999 = "Error # 9999.\nDescription: Unspected error.\n";
+	public static final String ERR9999 = "Error # 9999.\nDescription: Unspected error.";
 	
 	
 	
@@ -94,66 +98,10 @@ public final class CryptoCore {
 	
 	
 	
-	/* Auxiliary method: password resizing through repetition. */
-	public static String keyRemolding(String key, int newLength) {
-		if (key.length() == newLength) {
-			idmPrint(",");
-			return key;
-		} else if (key.length() < newLength) {
-			int pos = 0;
-			int tokenSize = key.length();
-			do {
-				idmPrint(",");
-				key += key.charAt(pos);
-				pos = (pos <= tokenSize - 1) ? pos + 1 : 0;
-			} while (key.length() < newLength);
-			return key;
-		} else { // (key.length() > newLength)
-			idmPrint(",");
-			key = key.substring(0, newLength);
-			return key;
-		}
-	}
-
-	
-	
-	/* Symmetric foundry-technique without key. */ 
-	public static String symmRandomFoundry(String aText, boolean doUndo) {
-		String returnText = "";
-		for (int i = 0; i < aText.length(); i++) {
-			idmPrint(".");
-			returnText += 
-					(doUndo) ?
-					(char) ((int) (aText.charAt(i)) + (aText.length() - i)) :
-					(char) ((int) (aText.charAt(i)) - (aText.length() - i)) ;
-		}
-		idmPrint("[" + returnText + "]");
-		return returnText;
-	}
-	
-	
-	
-	/* Symmetric foundry-technique with key. */ 
-	public static String symmKeyFoundry(String aText, String key, boolean doUndo) {
-		idmPrint("[" + key + "][" + aText.length() + "]");
-		key = keyRemolding(key, aText.length());
-		String returnText = "";
-		for (int i = 0; i < aText.length(); i++) {
-			idmPrint(".");
-			returnText += 
-					(doUndo) ?
-					(char) ((int) (aText.charAt(i)) + (int) (key.charAt(i)) + i) :
-					(char) ((int) (aText.charAt(i)) - (int) (key.charAt(i)) - i) ;
-		}
-		idmPrint("[" + key + "][" + aText.length() + "][" + returnText + "]");
-		return returnText;
-	}
-	
-	
-	
-	/* Simple char switching method, used as a cryptography step. */
 	/* Very simple, old, and rudimentary method of cryptography, unless like knowledge. */
-	public static char charSwitch(char c, boolean doUndo) {
+	/* Simple char switching method, used as a cryptography step. It will be used on hybrid mode. */
+	/* Auxiliary method: simple char switching for others methods calling. */
+	public static char charSwitching(char c, boolean doUndo) {
 		switch (c) {
 		case 'a': 
 			return (doUndo) ? 'q' : 'K';
@@ -354,4 +302,80 @@ public final class CryptoCore {
 			return c;
 		}
 	}
+	
+	
+	
+	/* Auxiliary method: password resizing through repetition. */
+	public static String keyRemolding(String key, int newLength) {
+		
+		/* BUG FOUND in this method:
+		 * newLength negative <= -1
+		 * { java.lang.StringIndexOutOfBoundsException } */
+		
+		if (key.length() == newLength) {
+			idmPrint(",");
+			return key;
+		} else if (key.length() < newLength) {
+			int pos = 0;
+			int tokenSize = key.length();
+			do {
+				idmPrint(",");
+				key += key.charAt(pos);
+				pos = (pos <= tokenSize - 1) ? pos + 1 : 0;
+			} while (key.length() < newLength);
+			return key;
+		} else { // (key.length() > newLength)
+			idmPrint(",");
+			key = key.substring(0, newLength);
+			return key;
+		}
+	}
+
+	
+	
+	/* Symmetric foundry-technique without key. */ 
+	public static String symmCharSwitching(String aText, boolean doUndo) {
+		String returnText = "";
+		for (int i = 0; i < aText.length(); i++) {
+			idmPrint(".");
+			returnText += charSwitching(aText.charAt(i), doUndo);
+		}
+		idmPrint("[" + returnText + "]");
+		return returnText;
+	}	
+	
+	
+	
+	/* Symmetric foundry-technique without key. */ 
+	public static String symmRandomFoundry(String aText, boolean doUndo) {
+		String returnText = "";
+		for (int i = 0; i < aText.length(); i++) {
+			idmPrint(".");
+			returnText += 
+					(doUndo) ?
+					(char) ((int) (aText.charAt(i)) + (aText.length() - i)) :
+					(char) ((int) (aText.charAt(i)) - (aText.length() - i)) ;
+		}
+		idmPrint("[" + returnText + "]");
+		return returnText;
+	}
+	
+	
+	
+	/* Symmetric foundry-technique with key. */ 
+	public static String symmKeyFoundry(String aText, String key, boolean doUndo) {
+		idmPrint("[" + key + "][" + aText.length() + "]");
+		key = keyRemolding(key, aText.length());
+		String returnText = "";
+		for (int i = 0; i < aText.length(); i++) {
+			idmPrint(".");
+			returnText += 
+					(doUndo) ?
+					(char) ((int) (aText.charAt(i)) + (int) (key.charAt(i)) + i) :
+					(char) ((int) (aText.charAt(i)) - (int) (key.charAt(i)) - i) ;
+		}
+		idmPrint("[" + key + "][" + aText.length() + "][" + returnText + "]");
+		return returnText;
+	}
+	
 }
