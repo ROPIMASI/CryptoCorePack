@@ -88,15 +88,15 @@ public final class CryptoCore {
 	
 	
 	
-	/* Auxiliary method to print when DEBUG_MODE == true. */
+	/* DEBUG auxiliary method to print when DEBUG_MODE == true. */
 	protected static void idmPrint(String str) {
 		if (IN_DEBUG_MODE) System.out.println(str);
 	}
 	
 	
 	
-	/* Password resizing method through repetition. */
-	public static String resizeRepeating(String key, int newLength) {
+	/* Auxiliary method: password resizing through repetition. */
+	public static String keyRemolding(String key, int newLength) {
 		if (key.length() == newLength) {
 			idmPrint(",");
 			return key;
@@ -118,73 +118,241 @@ public final class CryptoCore {
 
 	
 	
-	/* Symmetric encryptation without key. */ 
-	public static String symmEncrypt(String decryptedText) {
-		/**
-		 * Return an encrypted string from a given natural text (input on arg).
-		 * 
-		 */
-		String encryptedText = "";
-		for (int i = 0; i < decryptedText.length(); i++) {
+	/* Symmetric foundry-technique without key. */ 
+	public static String symmRandomFoundry(String aText, boolean doUndo) {
+		String returnText = "";
+		for (int i = 0; i < aText.length(); i++) {
 			idmPrint(".");
-			encryptedText += (char) ((int) (decryptedText.charAt(i)) + (decryptedText.length() - i));
+			returnText += 
+					(doUndo) ?
+					(char) ((int) (aText.charAt(i)) + (aText.length() - i)) :
+					(char) ((int) (aText.charAt(i)) - (aText.length() - i)) ;
 		}
-		idmPrint("[" + encryptedText + "]");
-		return encryptedText;
+		idmPrint("[" + returnText + "]");
+		return returnText;
 	}
-
 	
 	
-	/* Overloading: Symmetric encryptation with key. */ 
-	public static String symmEncrypt(String decryptedText, String key) {
-		/**
-		 * Return an encrypted string from a given natural text (input on arg).
-		 * 
-		 */
-		idmPrint("[" + key + "][" + decryptedText.length() + "]");
-		key = resizeRepeating(key, decryptedText.length());
-		String encryptedText = "";
-		for (int i = 0; i < decryptedText.length(); i++) {
+	
+	/* Symmetric foundry-technique with key. */ 
+	public static String symmKeyFoundry(String aText, String key, boolean doUndo) {
+		idmPrint("[" + key + "][" + aText.length() + "]");
+		key = keyRemolding(key, aText.length());
+		String returnText = "";
+		for (int i = 0; i < aText.length(); i++) {
 			idmPrint(".");
-			encryptedText += (char) ((int) (decryptedText.charAt(i)) + (int) (key.charAt(i)) + i);
+			returnText += 
+					(doUndo) ?
+					(char) ((int) (aText.charAt(i)) + (int) (key.charAt(i)) + i) :
+					(char) ((int) (aText.charAt(i)) - (int) (key.charAt(i)) - i) ;
 		}
-		idmPrint("[" + key + "][" + decryptedText.length() + "][" + encryptedText + "]");
-		return encryptedText;
+		idmPrint("[" + key + "][" + aText.length() + "][" + returnText + "]");
+		return returnText;
 	}
+	
+	
+	
+	/* Simple char switching method, used as a cryptography step. */
+	/* Very simple, old, and rudimentary method of cryptography, unless like knowledge. */
+	public static char charSwitch(char c, boolean doUndo) {
+		switch (c) {
+		case 'a': 
+			return (doUndo) ? 'q' : 'K';
+		
+		case 'b':
+			return (doUndo) ? 'w' : 'X';
+		
+		case 'c':
+			return (doUndo) ? 'e' : 'V';
+		
+		case 'd':
+			return (doUndo) ? 'R' : 'm';
+		
+		case 'e':
+			return (doUndo) ? '4' : 'c';
+		
+		case 'f':
+			return (doUndo) ? 'Y' : 'n';
+		
+		case 'g':
+			return (doUndo) ? 'u' : '2';
+		
+		case 'h':
+			return (doUndo) ? 'i' : 'P';
+		
+		case 'i':
+			return (doUndo) ? 'o' : 'h';
+		
+		case 'j':
+			return (doUndo) ? '8' : 'Q';
+		
+		case 'k':
+			return (doUndo) ? 'A' : '8';
+		
+		case 'l':
+			return (doUndo) ? 'S' : 's';
+		
+		case 'm':
+			return (doUndo) ? 'd' : 'z';
+		
+		case 'n':
+			return (doUndo) ? 'f' : '4';
+		
+		case 'o':
+			return (doUndo) ? '2' : 'i';
+		
+		case 'p':
+			return (doUndo) ? 'H' : 'J';
+		
+		case 'q':
+			return (doUndo) ? 'J' : 'a';
+		
+		case 'r':
+			return (doUndo) ? 'K' : 'D';
+		
+		case 's':
+			return (doUndo) ? 'l' : '7';
+		
+		case 't':
+			return (doUndo) ? '6' : 'E';
+		
+		case 'u':
+			return (doUndo) ? 'x' : 'g';
+		
+		case 'v':
+			return (doUndo) ? 'C' : 'W';
+		
+		case 'w':
+			return (doUndo) ? 'V' : 'b';
+		
+		case 'x':
+			return (doUndo) ? 'B' : 'u';
+		
+		case 'y':
+			return (doUndo) ? '0' : 'F';
+		
+		case 'z':
+			return (doUndo) ? 'm' : '3';
+			
+		case 'A':
+			return (doUndo) ? 'Q' : 'k';
+	
+		case 'B':
+			return (doUndo) ? 'W' : 'x';
 
-	
-	
-	/* Symmetric decryptation without key. */
-	public static String symmDecrypt(String encryptedText) {
-		/**
-		 * Return a decrypted string from a given encrypted text (input on arg).
-		 * 
-		 */
-		String decryptedText = "";
-		for (int i = 0; i < encryptedText.length(); i++) {
-			idmPrint(":");
-			decryptedText += (char) ((int) (encryptedText.charAt(i)) - (encryptedText.length() - i));
-		}
-		idmPrint("[" + decryptedText + "]");
-		return decryptedText;
-	}
+		case 'C':
+			return (doUndo) ? '5' : 'v';
+		
+		case 'D':
+			return (doUndo) ? 'r' : 'M';
+		
+		case 'E':
+			return (doUndo) ? 't' : '@';
+		
+		case 'F':
+			return (doUndo) ? 'y' : 'N';
+		
+		case 'G':
+			return (doUndo) ? '9' : 'O';
+		
+		case 'H':
+			return (doUndo) ? 'I' : 'p';
+		
+		case 'I':
+			return (doUndo) ? 'O' : 'H';
+		
+		case 'J':
+			return (doUndo) ? 'p' : 'q';
+		
+		case 'K':
+			return (doUndo) ? 'a' : 'r';
+		
+		case 'L':
+			return (doUndo) ? '3' : 'S';
+		
+		case 'M':
+			return (doUndo) ? 'D' : ' ';
+		
+		case 'N':
+			return (doUndo) ? 'F' : '!';
+		
+		case 'O':
+			return (doUndo) ? 'G' : 'I';
+		
+		case 'P':
+			return (doUndo) ? 'h' : '1';
 
-	
-	
-	/* Overloading: Symmetric decryptation with key. */
-	public static String symmDecrypt(String encryptedText, String key) {
-		/**
-		 * Return a decrypted string from a given encrypted text (input on arg).
-		 * 
-		 */
-		idmPrint("[" + key + "][" + encryptedText.length() + "]");
-		key = resizeRepeating(key, encryptedText.length());
-		String decryptedText = "";
-		for (int i = 0; i < encryptedText.length(); i++) {
-			idmPrint(":");
-			decryptedText += (char) ((int) (encryptedText.charAt(i)) - (int) (key.charAt(i)) - i);
+		case 'Q':
+			return (doUndo) ? 'j' : 'A';
+		
+		case 'R':
+			return (doUndo) ? '7' : 'd';
+
+		case 'S':
+			return (doUndo) ? 'L' : 'l';
+		
+		case 'T':
+			return (doUndo) ? 'Z' : '0';
+
+		case 'U':
+			return (doUndo) ? 'X' : '6';
+		
+		case 'V':
+			return (doUndo) ? 'c' : 'w';
+
+		case 'W':
+			return (doUndo) ? 'v' : 'B';
+		
+		case 'X':
+			return (doUndo) ? 'b' : 'U';
+
+		case 'Y':
+			return (doUndo) ? '1' : 'f';
+		
+		case 'Z':
+			return (doUndo) ? ' ' : 'T';
+			
+		case ' ':
+			return (doUndo) ? 'M' : 'Z';
+			
+		case '0':
+			return (doUndo) ? 'T' : 'y';
+		
+		case '1':
+			return (doUndo) ? 'P' : 'Y';
+		
+		case '2':
+			return (doUndo) ? 'g' : 'o';
+		
+		case '3':
+			return (doUndo) ? 'z' : 'L';
+		
+		case '4':
+			return (doUndo) ? 'n' : 'e';
+		
+		case '5':
+			return (doUndo) ? '@' : 'C';
+		
+		case '6':
+			return (doUndo) ? 'U' : 't';
+		
+		case '7':
+			return (doUndo) ? 's' : 'R';
+		
+		case '8':
+			return (doUndo) ? 'k' : 'j';
+		
+		case '9':
+			return (doUndo) ? '!' : 'G';
+			
+		case '!':
+			return (doUndo) ? 'N' : '9';
+
+		case '@':
+			return (doUndo) ? 'E' : '5';
+			
+		default:
+			return c;
 		}
-		idmPrint("[" + key + "][" + encryptedText.length() + "][" + decryptedText + "]");
-		return decryptedText;
 	}
 }
