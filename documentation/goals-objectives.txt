@@ -1,0 +1,74 @@
+﻿# PRESENTATION: "goals-objective.txt" (v2)
+This document is the official CryptoCorePack Project's goals and objectives list. Lines are added by the author only, based on author's interests and needs of project itself. 
+Maybe in the future the project's goals and objectives list can be filled by contributors, through the results of sequence of virtual events: round-table, debate, and convention, in that order.  
+  
+  
+  
+# WARNING !
+### THIS IS A READ-ONLY DOCUMENT.  
+  
+  
+  
+### Author's main objectives
+Main ROPIMASI's objective is to demonstrate some of my skills in "IT" (Information Technology), more specifically in "CS" (Computer Science). This demonstration is designated for representatives of companies that develop software or other solutions in digital technologies, for development team leaders, for the human resources department of those previously mentioned, or for those who may be interested in and who are looking for a professional to integrate or lead your team.  
+Some skills used in this project are part of large areas of knowledge:
++ JAVA;
++ OOP;
++ Kanban;
++ Git;
++ GitHub;
++ GitFlow.  
+<!-- + SCRUM in progress to be shown -->
+<!-- + Requirements Analysis soon future -->
+<!-- + UML soon future -->
+<!-- + Maven future -->
+<!-- + MVC future -->
+<!-- + API further future -->
+  
+  
+  
+### Project's main objectives
+The objective of this project is to implement a package of Java classes with symmetric and asymmetric cryptography features applicable to plain text values and  plain text files. The package should be implemented in such a way that it can be distributed and imported by projects that wish to use it. First CryptoCorePack must be able to respond by itself to the interactivity of the Command-Line-Interface, then to be importable to other desktop or server projects and, later, integrable with Web-Services projects.  
+  
+  
+  
+### Project's main goals
+#### CryptoCorePack's **third goal**...
+Release the first full stable version **1.0.0-stable** which has its main features are as follow:
++ Lorem;
++ Ipsum:
+  - Foo;
+  - Bar;
+  - Baz;
+  - Qux.
++ Under:
+  - Requirements;
+  - Analysis.  
+  
+#### CryptoCorePack's **second goal**
+Release... Under analysis... which has its main features are as follow:
++ Lorem;
++ Ipsum:
+  - Foo;
+  - Bar;
+  - Baz;
+  - Qux.
++ Under:
+  - Requirements;
+  - Analysis.  
+  
+#### CryptoCorePack's **first goal**
+Release a MVP-stage (minimum viable product) version **0.1.0-_beta_** which has its main features are as follow:
++ Lorem;
++ Ipsum:
+  - Foo;
+  - Bar;
+  - Baz;
+  - Qux.
++ Under:
+  - Requirements;
+  - Analysis.  
+  
+  
+  
+######EOF.ROPIMASI.  

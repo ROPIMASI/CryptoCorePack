@@ -1,0 +1,74 @@
+# PRESENTATION: "0.1.0-backlog.txt" (v1)
+This document is the official CryptoCorePack Project's backlog documentation for the project version '0.1.0-beta'. This includes a features list as a target to be reached, then once the target is reached and merged to 'release' branch the label "0.1.0-beta" is assigned to it. The backlog content is added by the project's author only, based on analysis of 'goals-objectives.txt'. Maybe in the future this document (M.n.p-backlog.txt) can be filled by contributors, through the results of sequence of virtual events: round-table, debate, and convention, in that order.  
+  
+  
+  
+##### A preliminary note
+Namely: CryptoCorePack is monitored under the project-template "Automated Kanban with reviews" on GitHub, and managed under influence of "SCRUM", therefore the project has "backlog" and, the project's development time-line is also guided by "Gitflow", so it has some branches such as "master", "develop", "release", "feature/xyz", "bugfix", "hotfix". See more about the GitHub Kanban panel of the [CryptoCorePack's project in its own page](https://github.com/users/ROPIMASI/projects/9), and see more about its [branches and time-line evolution in its own repository](https://github.com/ROPIMASI/CryptoCorePack). For a better reading know the table of [acronyms and abbreviations](https://github.com/ROPIMASI/CryptoCorePack/tree/master/documentation/acronyms-abbreviations.txt).
+  
+  
+  
+# WARNING !
+### THIS DOCUMENT HAS ITS OWN RULES, WHICH MUST BE FOLLOWED SERIOUSLY !
+(Because, maybe, this file will be read and interpreted by a software in the future.)  
+  
+  
+  
+### INSTRUCTIONS:
++ Inputs in this document must be done as a queue (FIFO: First In First Out Data Structure);
+  - Write newlines in the above part of the tables below staying up the most recent line (see and follow date column).  
++ All columns must be filled with its related data;
++ Any character must NOT be changed;
+  - Keep unchanged presentation, warning, instructions, etc sections;
+  - Keep unchanged table-title, column's top, column's bottom.  
++ CHANGE'S TYPE column must be only filled with the standard values:
+  - New feature;
+  - Documentation;
+  - Improvement;
+  - Bug fix.  
++ EACH COLUMN must obey/respect its length, as marked at column's top, e.g. 8, 16, 80, 112, 128, etc.:
+  - At the top and bottom of column is possible to see that from first to last character of each column are represented by dash "-", and so on, but there are some pipe "|" characters spread being a especial character as columns limiter;
+  - Inside each columns data are separated by ";" character at the end of the words, and rest of column filled with " " space character until the end of column.  
+  
+  
+  
+### FEATURES TABLE:
+RDID        |CHANGE'S TYPE   |ALIAS                           |DETAILS  
+-12---------|-16-------------|-32-----------------------------|-196------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
+                                                                                                                                                                                                                                                                      
+Newlines will be added just below here... (keep this line here, at the top like it is now)
+RD-0.1.0;    Documentation;   Folder with initial docs;        Folder 'documentation' containing files with initial information: versioning, to-do-list, 0.1.0-backlog;  
+RD-0.1.0;    New feature;     Sub-options processing;          Using the -ei/-di option performs encryption/decryption using token's shuffled chars injection technique;  
+RD-0.1.0;    New feature;     Sub-options processing;          Using the -ef/-df option performs encryption/decryption using char foundry technique;  
+RD-0.1.0;    New feature;     Sub-options processing;          Using the -es/-ds option performs encryption/decryption using char switching technique;   
+RD-0.1.0;    New feature;     CLI options processing;          Processes CLI arguments as follow, each option prints to standard output: -h brief help explanation, -v project's version, -e/-d print the encrypted/decrypted string from the given one;  
+RD-0.1.0;    New feature;     CLI args catcher;                Capability to read CLI arguments to perform encryption or decryption of a given plain text value (string). Args can be: an option, a key, a string. Possible options are: -h, -v, -e<s|f|i>, -d<s|f|i>;  
+-
+RD-0.1.0;    Bug fix;         X...                             Lorem ipsum foo bar baz qux...; // Sample line.  
+RD-0.1.0;    Improvement;     A...                             Lorem ipsum foo bar baz qux...; // Sample line.  
+RD-0.1.0;    Documentation;   B...                             Lorem ipsum foo bar baz qux...; // Sample line.  
+RD-0.1.0;    New feature;     C...                             Lorem ipsum foo bar baz qux...; // Sample line.  
+                                                                                                                                                                      
+-12---------|-16-------------|-32-----------------------------|-196------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|  
+  
+  
+  
+######EOF.ROPIMASI.  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
