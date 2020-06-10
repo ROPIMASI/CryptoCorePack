@@ -39,7 +39,7 @@
 
 
 /* PACKAGE OWNER. */
-package com.ropimasi.cryptocorepack;
+package dev.ronaldomarques.cryptocorepack;
 
 
 /* IMPORT OF DEPENDENCES. */

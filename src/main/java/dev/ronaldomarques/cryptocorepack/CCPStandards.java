@@ -39,7 +39,7 @@
 
 
 /* PACKAGE OWNER. */
-package com.ropimasi.cryptocorepack;
+package dev.ronaldomarques.cryptocorepack;
 
 
 
@@ -59,7 +59,7 @@ public final class CCPStandards { // v3
 	public static final String PROJ_NAME = "Cryptography Core Package Project";
 	public static final String PROJ_ALIAS = "CryptoCorePack";
 	public static final String PROJ_PACKAGE_PATH = "com/ropimasi/cryptocorepack";
-	public static final String PROJ_PACKAGE_NAME = "com.ropimasi.cryptocorepack";
+	public static final String PROJ_PACKAGE_NAME = "dev.ronaldomarques.cryptocorepack";
 	public static final String PROJ_BUILD = "20200428";
 	public static final String PROJ_PRE_VERSION = "dev";
 	public static final String PROJ_VERSION_PATCH = "0";

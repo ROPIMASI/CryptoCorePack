@@ -15,7 +15,7 @@ Namely: CryptoCorePack is monitored under the project-template "Automated Kanban
 ### The CryptoCorePack's versioning guidelines:
 
 #### Project's main assets version
-Describe the version of the main assets of the project (com.ropimasi.cryptocorepack package). For that it's used the versioning-expression. Its parts works as follow:
+Describe the version of the main assets of the project (dev.ronaldomarques.cryptocorepack package). For that it's used the versioning-expression. Its parts works as follow:
 + Major
   - It represents the main version, a number that changes when the project has its whole list of predefined requirements and intended for this version in the backlog developed;
     - The whole list of predefined requirements intended for a specific version is called as "version-backlog", in other words "M.m.p-backlog", more realistic examples: 1.0.0-backlog, or 2.0.0-backlog, or partial in releases 0.3.0-backlog, or 0.1.0-backlog;
