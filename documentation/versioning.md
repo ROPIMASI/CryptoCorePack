@@ -1,13 +1,16 @@
 <a name="presentation"></a>
-# PRESENTATION: `"versioning.md" (v6)`
-This document is the official CryptoCorePack's versioning documentation. This includes the project's versioning method and a simple historical list of released versions, in which, lines are added by the project's author only.
-  
 
-As mentioned on `README.md` at root directory, CryptoCorePack has been developed under _SemVer_. Thus, it uses a composed of five parts VerExpr: Major.Minor.Patch-ReleaseStatus+Build (in short form M.m.p-r+b). Even it seems to be too long, but who getting involved with the project can notice that it is not, since the numbers and words used on _versioning-expression_ are small, and more importantly, the two last flags (ReleaseStatus and Build) are optional, needed in some cases. Examples: **0.1.0-beta**, **2.4.1-stable+20201005**.   
+# Versioning
+`documentation/versioning.md (v6)`
+This document is the official CryptoCorePack's versioning documentation. This includes the project's versioning method and a simple historical list of released versions, in which, lines are added by the project's author only.  
+  
+As mentioned on `README.md` at root directory, CryptoCorePack has been developed under _SemVer_. Thus, it uses a composed of five parts VerExpr: Major.Minor.Patch-ReleaseStatus+Build (in short form M.m.p-r+b). Even it seems to be too long, but who getting involved with the project can notice that it is not, since the numbers and words used on _versioning-expression_ are small, and more importantly, the two last flags (ReleaseStatus and Build) are optional, needed in some cases. Examples: **0.1.0-beta**, **2.4.1-stable+20201005**.
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
-### The CryptoCorePack's versioning guidelines:
+
+## The CryptoCorePack's versioning guidelines:
   
 #### Project's main assets version
 Describe the version of the main assets of the project (dev.ronaldomarques.cryptocorepack package). For that it's used the VerExpr mentioned above. Its parts works as follow:
@@ -77,11 +80,13 @@ Describe the version of some project's elements. Elements are small parts which 
     - Usually contracted form like that: yyyymmdd.  
 + EACH COLUMN must obey/respect its length, as marked at column's top, e.g. 8, 16, 80, 112:
   - At the top and bottom of column is possible to see that from first to last character of each column are represented by dash "-", and so on, but there are some pipe "|" characters spread being a especial character as columns limiter;
-  - Inside each columns data are separated by ";" character at the end of the words, and rest of column filled with " " space character until the end of column.  
+  - Inside each columns data are separated by ";" character at the end of the words, and rest of column filled with " " space character until the end of column.
+
 &nbsp;  
 &nbsp;  
 &nbsp;  
-### HISTORYCAL TABLE:
+
+## HISTORYCAL TABLE:
 DATE    |VERSION |RELEASE     |BUILD       |NOTE  
 --------|--------|------------|------------|----------------------------------------------------------------------------------------|  
                                                                                                                                     

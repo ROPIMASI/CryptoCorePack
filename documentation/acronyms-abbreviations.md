@@ -1,4 +1,7 @@
-﻿# PRESENTATION: `"acronyms-abbreviations.md" (v1)`
+﻿<a name="presentation"></a>
+
+# Acronyms and Abbreviations
+`"documentation/acronyms-abbreviations.md" (v2)`
 This document is the official CryptoCorePack's acronyms and abbreviations table. Lines are added by project's author only, based on the project's needs.  
 &nbsp;  
 &nbsp;  

@@ -1,4 +1,7 @@
-# PRESENTATION: `changelog.txt (v4)`
+<a name="presentation"></a>
+
+# Changelog
+`documentation/changelog.txt (v4)`
 This document is the official CryptoCorePack Project's changelog. Lines are added by the project's author only, based on the implemented features from 'to-do-list.txt'.  
 Since this file (changelog.txt) content has already been analyzed, implemented, and tested so this file works as a read-only historical table of features and others changes.  
   

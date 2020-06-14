@@ -1,4 +1,7 @@
-﻿# PRESENTATION: `"goals-objective.md" (v3)`
+﻿<a name="presentation"></a>
+
+# Goals and Objectives
+`documentations/goals-objective.md (v3)`
 This document is the official CryptoCorePack's goals and objectives list. This file's content is added by the author only, based on author's interests and needs of project itself. Maybe in the future the project's goals and objectives list can be filled by contributors, through the results of sequence of virtual events: round-table, debate, and convention, in that order.  
   
   

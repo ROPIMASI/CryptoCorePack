@@ -14,8 +14,10 @@ Cryptogrphy Core Package Project - `README.md (v6)`
   
 The **CryptoCorePack** project belongs to author's portfolio. The detailed project can be followed on his GitHub Projects List: [github.com/users/ROPIMASI/projects/](https://github.com/users/ROPIMASI/projects/). It is also found on author's web-portfolio: [ronaldomarques.dev](https://www.ronaldomarques.dev).  
   
-#### Table of content
+<a name="list-of-content"></a>
+## List of content
 - [Presentation](#presentation)
+- [List of content](#list-of-content)
 - [Description](#description)
 - [Project's objective](#project-objective)
 - [Author](#author)

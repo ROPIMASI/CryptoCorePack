@@ -1,4 +1,7 @@
-# PRESENTATION: `contributors.txt (v2)`
+<a name="presentation"></a>
+
+# Contributors
+`documentation/contributors.txt (v2)`
 Along with the project developing, many persons become offering help, they will be noted here. This file works as a table of personal information.  
   
   
