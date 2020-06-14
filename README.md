@@ -68,7 +68,7 @@ The standard flags of _ReleaseStatus_ for the _versioning-expression_ are as fol
   
 #### Next Versions: 0.1.0-alpha;
   
-A detailed description of each past and current version and, the milestones for the future versions can be found in the [project's documentation](https://github.com/ROPIMASI/CryptoCorePack/tree/master/documentationREADME.FIRST.md).  
+A detailed description of each past and current version and, the milestones for the future versions can be found in the [project's documentation](https://github.com/ROPIMASI/CryptoCorePack/tree/master/documentation/README.FIRST.md).  
 &nbsp;  
 &nbsp;  
 &nbsp;  
@@ -80,6 +80,7 @@ A detailed description of each past and current version and, the milestones for 
 &nbsp;  
 >**IMPORTANT NOTE / DISCLAIMER:**
 >This is a personal, private project, with the purpose of professional development in information technology, and for use and fruit unique and exclusively by its author. It is a project in the development and experimentation phase, in which its author has no responsibility for its results and effects if used by another person or institution that is not its author.  
+  
 &nbsp;  
 &nbsp;  
 &nbsp;  
@@ -90,8 +91,7 @@ This is a personal project, there is no license yet (either copying or use are D
 &nbsp;  
 &nbsp;  
 <a name="thanks"></a>
-<hr>
-#### Thanks for reading.
+## Thanks for reading
 Sincerely, Ronaldo Marques.  
 &nbsp;  
 &nbsp;  
