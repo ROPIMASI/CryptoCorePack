@@ -3,11 +3,11 @@
  * CryptoCorePack
  * Cryptography Core Package Project
  * 
- * The CryptoCorePack and its resources are a personal property project sample, which I have developing to demonstrate some of my abilities: java, oop, mvc, scrum, kanban, git, github, gitflow.
- * The CryptoCorePack project belongs to my personal portfolio. Detailed project can be followed just here on GitHub: https://github.com/users/ROPIMASI/projects/. It is also found on my web portfolio: https://ropimasi.wixsite.com/portfolio.
+ * The CryptoCorePack and its resources are a personal project sample, which I have developing to demonstrate some of my abilities: oop, java, kanban, scrum, git, github, gitflow.
+ * The CryptoCorePack project belongs to my personal portfolio. Detailed project can be followed just here on GitHub: https://github.com/users/ROPIMASI/projects/. It is also found on my web portfolio: https://ronaldomarques.dev .
  * 
- * AUTHOR: RONALDO PI MA SI.
- * LICENSE: PRIVATE (either copy or usage are prohibited).
+ * AUTHOR: RONALDO MARQUES.
+ * LICENSE: SEE FULL DOCUMMENTATION. IT IS A PERSONAL PROJECT, THER IS NO LICENSE YET (either copy or usage are discouraged).
  * 
  * DESCRIPTION:
  *     - SUBJECT: Plain text symmetric and asymmetric cryptography package;
@@ -15,17 +15,17 @@
  *     - PROJECT ALIAS: CryptoCorePack.
  *     
  * For many else informations see the official documentation:
- *     - README.md ;
- *     - https://github.com/ROPIMASI/CryptoCorePack/tree/master/documentation .
+ *     - https://github.com/ROPIMASI/CryptoCorePack/tree/master/README.md ; and,
+ *     - https://github.com/ROPIMASI/CryptoCorePack/tree/master/documentation/README.FIRST.md .
  *
  * NOTA IMPORTANTE / ISENÇÃO DE RESPONSABILIDADE:
- *     - Este é um projeto pessoal, particular, com finalidade exclusiva de estudos em tecnologia da informação, e de uso e fruto única e exclusivamente de seu autor. Trata-se de um projeto em fase de desenvovimento e experimentações, o qual não tem nenhuma garantia nem responsabilidade sobre seus resultados e efeitos ao ser utilizado.
+ *     - Este é um projeto pessoal, com finalidade exclusiva de estudos em tecnologia da informação, e de uso e fruto única e exclusivamente de seu autor. Trata-se de um projeto em fase de desenvovimento e experimentações, o qual não tem nenhuma garantia nem responsabilidade sobre seus resultados e efeitos ao ser utilizado.
  * 
  * IMPORTANT NOTE / DISCLAIMER:
- *     - This is a personal, private project, solely for the purpose of my studies in information technology, and for the sole and exclusive use of its author. It is a project under development and experimentation, which has no guarantee neither responsibility over its results and effects when used.
+ *     - This is a personal, solely for the purpose of my studies in information technology, and for the sole and exclusive use of its author. It is a project under development and experimentation, which has no guarantee neither responsibility over its results and effects when used.
  * 
  * NOTA IMPORTANTE / DESCARGO DE RESPONSABILIDAD:
- *     - Este es un proyecto personal y privado, con el único propósito de estudiar tecnología de la información, y de uso y fruta única y exclusivamente por su autor. Es un proyecto en desarrollo y experimentación, que no tiene garantía ni responsabilidad por sus resultados y efectos cuando se utiliza.
+ *     - Este es un proyecto personal, con el único propósito de estudiar tecnología de la información, y de uso y fruta única y exclusivamente por su autor. Es un proyecto en desarrollo y experimentación, que no tiene garantía ni responsabilidad por sus resultados y efectos cuando se utiliza.
  *     
  * ВАЖНОЕ ПРИМЕЧАНИЕ / ОТКАЗ ОТ ОТВЕТСТВЕННОСТИ:
  *     - Это личный, частный проект, с единственной целью изучения информационных технологий, а также для использования и плоды исключительно и исключительно его автором. Это проект, находящийся в стадии разработки и экспериментов, который не имеет никаких гарантий или ответственности за его результаты и результаты при использовании.
@@ -58,7 +58,7 @@ public final class CCPStandards { // v3
 	/* PRE-DEFINED PROJECT STANDARD INFOMATIONS CONSTANTS. */
 	public static final String PROJ_NAME = "Cryptography Core Package Project";
 	public static final String PROJ_ALIAS = "CryptoCorePack";
-	public static final String PROJ_PACKAGE_PATH = "dec/ronaldomarques/cryptocorepack";
+	public static final String PROJ_PACKAGE_PATH = "dev/ronaldomarques/cryptocorepack";
 	public static final String PROJ_PACKAGE_NAME = "dev.ronaldomarques.cryptocorepack";
 	public static final String PROJ_BUILD = "20200611";
 	public static final String PROJ_PRE_VERSION = "dev";
@@ -112,7 +112,7 @@ public final class CCPStandards { // v3
 	
 	
 	/* Text to be printed as SYNTAX. */
-	public static final String usageSyntaxe = "Usage syntaxe> under developing...";
+	public static final String usageSyntaxe = "Usage syntax> under developing...";
 	
 	/* Text to be printed as HELP. */
 	public static final String usageExplanaion = "Usage explanation> under developing...";
