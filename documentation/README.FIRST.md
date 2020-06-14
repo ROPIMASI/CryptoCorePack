@@ -11,10 +11,8 @@ Namely: CryptoCorePack is monitored under the project-template **Automated Kanba
 &nbsp;  
 &nbsp;  
 
+teste
 
-
-
-  
 &nbsp;  
 &nbsp;  
 &nbsp;  
@@ -26,18 +24,18 @@ Namely: CryptoCorePack is monitored under the project-template **Automated Kanba
 &nbsp;  
 >**IMPORTANT NOTE / DISCLAIMER:**
 >This is a personal, private project, with the purpose of professional development in information technology, and for use and fruit unique and exclusively by its author. It is a project in the development and experimentation phase, in which its author has no responsibility for its results and effects if used by another person or institution that is not its author.  
+  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="license"></a>
 ## License
-This is a personal, **private**, proprietary project (either copying or use is prohibited).  
+This is a personal project, there is no license yet (either copying or use are DISCOURAGED).  
 &nbsp;  
 &nbsp;  
 &nbsp;  
 <a name="thanks"></a>
-<hr>
-#### Thanks for reading.
+## Thanks for reading
 Sincerely, Ronaldo Marques.  
 &nbsp;  
 &nbsp;  
