@@ -58,9 +58,9 @@ public final class CCPStandards { // v3
 	/* PRE-DEFINED PROJECT STANDARD INFOMATIONS CONSTANTS. */
 	public static final String PROJ_NAME = "Cryptography Core Package Project";
 	public static final String PROJ_ALIAS = "CryptoCorePack";
-	public static final String PROJ_PACKAGE_PATH = "com/ropimasi/cryptocorepack";
+	public static final String PROJ_PACKAGE_PATH = "dec/ronaldomarques/cryptocorepack";
 	public static final String PROJ_PACKAGE_NAME = "dev.ronaldomarques.cryptocorepack";
-	public static final String PROJ_BUILD = "20200428";
+	public static final String PROJ_BUILD = "20200611";
 	public static final String PROJ_PRE_VERSION = "dev";
 	public static final String PROJ_VERSION_PATCH = "0";
 	public static final String PROJ_VERSION_MINOR = "1";
@@ -110,7 +110,12 @@ public final class CCPStandards { // v3
 	public static final int[] FSJGOBITCI = {0, 1, 1, 2, 2, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 5, 5, 6, 6, 6, 6, 6, 6, 6, 6, 6, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 7, 8, 8, 8, 8};
 			
 	
-
+	
+	/* Text to be printed as SYNTAX. */
+	public static final String usageSyntaxe = "Usage syntaxe> under developing...";
+	
+	/* Text to be printed as HELP. */
+	public static final String usageExplanaion = "Usage explanation> under developing...";
 }
   
 

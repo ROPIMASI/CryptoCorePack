@@ -1,4 +1,4 @@
-# PRESENTATION: "contributors.txt" (v2)
+# PRESENTATION: `contributors.txt (v2)`
 Along with the project developing, many persons become offering help, they will be noted here. This file works as a table of personal information.  
   
   
@@ -35,15 +35,15 @@ Along with the project developing, many persons become offering help, they will 
   
   
     
-# DATUM TABLE:
+### CONTRIBUTORS TABLE:
 PERSON;                |FEATS;                                                         |PROFILE:
--24--------------------|-64------------------------------------------------------------|-40------------------------------------|  
+-----------------------|---------------------------------------------------------------|---------------------------------------|  
                                                                                                                                   
 Newlines will be added here...
 ROPIMASI;               Design; Documentation; New features; Bug fix; Improvement;      https://github.com/ROPIMASI  
                                                                                                                                   
--24--------------------|-64------------------------------------------------------------|-40---------------------------------128|  
+-----------------------|---------------------------------------------------------------|---------------------------------------|  
   
   
   
-#EOF.ROPIMASI.
+######EOF.ROPIMASI.  

@@ -57,6 +57,7 @@ public final class CryptoCore { // v5.
 	/* AUXILIARIES METHODS. */
 	
 	/* Debug auxiliary method to print when DEBUG_MODE == true: */
+	/* This is a tool. Refactor: It must get out in the future. */
 	protected static void dmPrint(String str) { // v0.
 		if (CCPStandards.DEBUG_MODE) System.out.print(str);
 	}
@@ -64,14 +65,15 @@ public final class CryptoCore { // v5.
 
 	
 	/* Auxiliary method: simple flag (Even or Odd) for positive integer numbers: */
-	public static int evenOdd(int n) { // v0.
+	/* This is a tool. Refactor: It must get out in the future. */
+	private static int evenOdd(int n) { // v0.
 		return ((n % 2) == 0) ? 0 : 1;
 	}
 	
 	
 	
 	/* Auxiliary method: key verification: */
-	public static boolean keyValidation(String key) { // v0.
+	private static boolean keyValidation(String key) { // v0.
 		if ((! key.isEmpty()) && (! key.isBlank()) && (key != null)) {
 			return ((key.length() >= CCPStandards.MIN_KEY_SIZE) && (key.length() <= CCPStandards.MAX_KEY_SIZE)) ? true : false;
 		} else {
@@ -82,21 +84,21 @@ public final class CryptoCore { // v5.
 	
 	
 	/* Auxiliary method: newLength verification: */
-	public static boolean newLengthValidation(int newLength) { // v0.
+	private static boolean newLengthValidation(int newLength) { // v0.
 		return ((newLength >= CCPStandards.MIN_KEY_SIZE) && (newLength <= CCPStandards.MAX_KEY_SIZE)) ? true : false;
 	}
 	
 	
 	
 	/* Auxiliary method: Encrypted token type recognizer: */
-	public static int tokenRecognition(String token) { // v0.
+	private static int tokenRecognition(String token) { // v0.
 		return (token.substring(token.length()-4).equalsIgnoreCase("ρπμδ")) ? 0 : (token.substring(token.length()-3).contentEquals("ρπμ")) ? 1 : -1 ; // -1 is an error.
 	}
 	
 	
 	
 	/* Auxiliary method: key resizing: */
-	public static String keyRemolding(String key, int newLength) {	// v2.
+	private static String keyRemolding(String key, int newLength) {	// v2.
 		if (keyValidation(key) && newLengthValidation(newLength)) {
 			if (key.length() == newLength) {
 				dmPrint("==");
@@ -129,7 +131,7 @@ public final class CryptoCore { // v5.
 	 * Using current version of JAVA 11.0.7, this algorithm has elementsAmount
 	 * limited at minimum 2 and max 32.
 	 * Functional method: Sequence of accumulative values generator: */	
-	public static int[] genAccumulativeSeq(int elementsAmount) { // v0.
+	private static int[] genAccumulativeSeq(int elementsAmount) { // v0.
 		// It will always create, at least, 2 elements, and always at max 32 elements.		
 		elementsAmount = (elementsAmount < 2) ? 2 : (elementsAmount > 32) ? 32 : elementsAmount;
 		int[] returnArray = new int[elementsAmount];
@@ -151,9 +153,9 @@ public final class CryptoCore { // v5.
 	 * has seek (as a index) limited at min 1, and max 31; and
 	 * has seek (as a value) limited at min 0, and max 536870912.
 	 * Functional method: Accumulative sequence element getter: */
-	public static int getAccumulativeSeqElement(char op, int seek) { // v1.
+	private static int getAccumulativeSeqElement(char op, int seek) { // v1.
 		/* 'op' is caller's option between (('i' or 'I') and ('v' | 'V'))
-		 * meaning 'index' or 'value', witch will be used on searching, so
+		 * meaning 'index' or 'value', which will be used on searching, so
 		 * the remaining option (the opposite to the choose one) will
 		 * be return. */
 		
@@ -195,7 +197,7 @@ public final class CryptoCore { // v5.
 	/* fibonacciSeq 0 1 1 2 3 5 8 13 21 35... up to 701408733, 45 elements.
 	 * Using current version of JAVA 11.0.7, this algorithm has elementsAmount limited at min 2 and max 44.
 	 * Functional method: Sequence of Fibonnacci values generator: */	
-	public static int[] genFibonacciSeq(int elementsAmount) { // v0.
+	private static int[] genFibonacciSeq(int elementsAmount) { // v0.
 		// It will always create, at least, 2 elements.
 		elementsAmount = (elementsAmount < 2) ? 2 : (elementsAmount > 45) ? 45 : elementsAmount;
 		int[] returnArray = new int[elementsAmount];
@@ -214,9 +216,9 @@ public final class CryptoCore { // v5.
 	 * has seek (as a index) limited at min 0, and max 44; and
 	 * has seek (as a value) limited at min 0, and max 701408733.
 	 * Functional method: Fibonnacci sequence element getter: */
-	public static int getFibonacciSeqElement(char op, int seek) { //v1.
+	private static int getFibonacciSeqElement(char op, int seek) { //v1.
 		/* 'op' is caller's option between (('i' or 'I') and ('v' | 'V'))
-		 * meaning 'index' or 'value', witch will be used on searching, so
+		 * meaning 'index' or 'value', which will be used on searching, so
 		 * the remaining option (the opposite to the choose one) will
 		 * be return. */
 		int[] tmpSequence;
@@ -257,7 +259,7 @@ public final class CryptoCore { // v5.
 	/* Very simple, old, and rudimentary method of cryptography, it works, unless, like knowledge.
 	 * Simple char switching method without key, used as a cryptography step. It will be used on hybrid modes.
 	 * Functional method: simple char switching for others methods calling. */
-	public static char charSwitching(char c, boolean doUndo) { // v0.
+	private static char charSwitching(char c, boolean doUndo) { // v0.
 		switch (c) {
 		case 'a': 
 			return (doUndo) ? 'q' : 'K';
@@ -530,7 +532,7 @@ public final class CryptoCore { // v5.
 		/* Keep the converted inputText to CharArray, better manageable in this method: */
 		final char[] inTxt;
 		// Keep the key to be injected converted in charArray, better manageable in this method: */
-		final char[] arbitraryToken; // An arbritary to this method token, witch will be injected to the inputText.
+		final char[] arbitraryToken; // An arbritary to this method token, which will be injected to the inputText.
 		/* Variables of loop control: */
 		int i = 0;		// Index that controls	"iteration seq"		on the sequence values.
 		int j = 1;		// Index that controls	"jumps"				on the loop with inputText.length() repetitions.
@@ -540,7 +542,7 @@ public final class CryptoCore { // v5.
 		if (doUndo) {
 			/* Encrypt */
 		
-			/* Witch injection mode use, Accumulative or Fiboancci? */
+			/* Which injection mode use, Accumulative or Fiboancci? */
 			switch (evenOdd(inputText.length())) {
 			
 			case 0: // Even: Using Accumulative sequence for jumps:
@@ -636,7 +638,7 @@ public final class CryptoCore { // v5.
 		/* Keep the converted inputText to CharArray, better manageable in this method: */
 		final char[] inTxt;
 		// Keep the key to be injected converted in charArray, better manageable in this method: */
-		final char[] inKeyTkn; // An token based on 'inputKey' to this method, witch will be injected to the inputText.
+		final char[] inKeyTkn; // An token based on 'inputKey' to this method, which will be injected to the inputText.
 		/* Variables of loop control: */
 		int i = 0;		// Index that controls	"iteration seq"		on the sequence values.
 		int j = 1;		// Index that controls	"jumps"				on the loop with inputText.length() repetitions.
@@ -646,7 +648,7 @@ public final class CryptoCore { // v5.
 		if (doUndo) {
 		/* Encrypt */
 		
-			/* Witch injection mode use, Accumulative or Fiboancci? */
+			/* Which injection mode use, Accumulative or Fiboancci? */
 			switch (evenOdd(inputText.length())) {
 			case 0: // Even, 0: Use accumulative sequence for jumps:
 				seqJumps = genAccumulativeSeq(8);
