@@ -37,7 +37,7 @@ The objective of this project is to implement a package of Java classes with sym
 #### CryptoCorePack's **first goal**
 To release a MVP (minimum viable product) version, **0.1.0-_beta_**, which will have its main features as follow:
 + Testable by CLI using commands and arguments;
-  - Has an external micro application 'cryp' to perform the encrypt tests;
+  - Has an external micro application 'encryp' to perform the encrypt tests;
     - Able to get a natural text input from user on CLI and to perform it at CryptoCore class; 
     - Able to process the following options as types of encrypt:
       - Symmetric Char Switching;
